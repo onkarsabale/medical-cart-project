@@ -1,4 +1,5 @@
-**CareMate**
+#CareMate#
 
-A medical cart project
+**A medical cart project**
+ This is the static website for Medicine Ordering using HTML5, CSS3, JS
 
