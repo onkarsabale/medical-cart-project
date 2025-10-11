@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      color: #1260ae;
+    }
+    .container {
+      max-width: 450px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    .back-arrow {
+      font-size: 24px;
+      color: #1260ae;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    .header-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .order-summary {
+      padding: 0 20px 15px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1260ae;
+    }
+    .order-summary-more{
+      text-decoration: underline;
+      color: #1260ae;
+      text-decoration-color: #1260ae;
+    }
+    
+    .order-summary a {
+      color: #1260ae;
+      text-decoration: none;
+    }
+    .delivery-info, .order-status-box {
+      background-color: #fff;
+      border: 1px solid #1260ae;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 20px;
+      margin-top: 0px;
+    }
+    .delivery-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .delivery-man {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .profile-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #bdd5ff;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 24px;
+    }
+    .delivery-man-details h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .delivery-man-details p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: #1260ae;
+    }
+    .contact-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .contact-icons a {
+      font-size: 20px;
+      color: #1260ae;
+      background-color: #bdd5ff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 36px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section-header {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .order-status-details {
+      font-size: 14px;
+      color: #1260ae;
+      margin-bottom: 15px;
+    }
+    .order-status-details .order-id {
+      text-decoration: underline;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 25px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background-color: #1260ae;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 25px;
+    }
+    .timeline-item-dot {
+      position: absolute;
+      left: -25px;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid #1260ae;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-item.completed .timeline-item-dot::after {
+      content: '\2713';
+      font-weight: 500;
+      font-size: 14px;
+      color: #1260ae;
+    }
+    .timeline-item-content h3 {
+      font-size: 16px;
+      font-weight: 800;
+      margin: 0;
+    }
+    .timeline-item-content p {
+      font-size: 14px;
+      color: #1260ae;
+      margin: 4px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="header-title">Track Your Order</h1>
+    </header>
+
+    <div class="order-summary">
+      2 items • ₹ 210.05
+      <p>PhysiciansCare Antacid <a href="#"><span class="order-summary-more">+1 more item</span></a></p>
+    </div>
+
+    <div class="delivery-info">
+      <div class="delivery-man">
+        <div class="profile-icon">&#128100;</div>
+        <div class="delivery-man-details">
+          <h3>Delivery Man Name</h3>
+          <p>+91 59764 94587</p>
+        </div>
+      </div>
+      <div class="contact-icons">
+        <a href="#">&#128172;</a>
+        <a href="#">&#9742;</a>
+      </div>
+    </div>
+
+    <div class="order-status-box">
+      <h2 class="section-header">Order Status</h2>
+      <div class="order-status-details">
+        <p>Order ID : <span class="order-id">4856214796</span></p>
+        <p>Delivery Time : 35 minutes</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item completed">
+          <div class="timeline-item-dot"></div>
+          <div class="timeline-item-content">
+            <h3>Order Confirmed</h3>
+            <p>Your order has been confirmed.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item in-progress">
+          <div class="timeline-item-dot"></div>
+          <div class="timeline-item-content">
+            <h3>Order Getting Packed</h3>
+            <p>Your medicines are getting packed.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item-dot"></div>
+          <div class="timeline-item-content">
+            <h3>Order is Ready to Pickup</h3>
+            <p>Your order is ready for pickup.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item-dot"></div>
+          <div class="timeline-item-content">
+            <h3>Order Delivered</h3>
+            <p>Your order is delivered successfully.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+

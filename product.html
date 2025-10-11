@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      color: #333;
+    }
+    .container {
+      max-width: 450px;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      padding-bottom: 20px;
+      display: none; /* hide all by default */
+    }
+    .container.active {
+      display: block;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .back-arrow, .cart-icon {
+      font-size: 22px;
+      color: #1260ae;
+      text-decoration: none;
+    }
+
+    .product-title {
+      padding: 15px 20px 0;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1260ae;
+      margin: 0;
+    }
+    .product-image-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product-image-container {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9f9f9;
+      overflow: hidden;
+    }
+    .product-image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .product-info {
+      padding: 0 20px;
+    }
+    .price-section {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1260ae;
+    }
+    .quantity {
+      font-size: 14px;
+      color: #1260ae;
+    }
+    .section-header {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1260ae;
+      margin-bottom: 10px;
+    }
+    .product-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #1260ae;
+      margin-bottom: 20px;
+    }
+    .rating-section {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .rating-stars {
+      color: #FFD700;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+    .add-to-cart-btn {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 15px;
+      background: #1260ae;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div id="Biofer_F" class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Biofer-F</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="Biofer_F.jpeg" alt="Biofer-F">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 50.13</span>
+        <span class="quantity">50 tablets</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Iron and folic acid supplement for treating anemia and improving blood health.A dietary supplement containing Iron Bisglycinate, Folic Acid, and essential Vitamins & Minerals.
+        It is used for the management of iron deficiency and anemia.
+        Helps in boosting hemoglobin levels, improving energy, and supporting overall health.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html#Biofer_F" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+
+  <div id="AbuminExtraTapuco" class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Abumin Extra Tapuco</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="AbuminExtraTapuco.jpeg" alt="Abumin Extra Tapuco">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 102.50</span>
+        <span class="quantity">50 tablets</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Protein-rich supplement designed to boost energy and support recovery.A health supplement formulated with Albumin, Methionine, L-Alanine, Korean Red Ginseng, and Coenzyme Q10.
+          It helps boost energy levels, improve immunity, support recovery, and enhance overall strength.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+  
+
+  <div id="VitaFolMultivitamins" class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">VitaFol Multivitamins</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="VitaFolMultivitamins.jpeg" alt="VitaFol Multivitamins">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 150.76</span>
+        <span class="quantity">30 tablets</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Daily multivitamin for improving immunity and maintaining overall health.A dietary supplement enriched with Multivitamins, Omega-3, and Antioxidants. 
+        Formulated to help maintain health, energy, and vitality.
+        Supports immune system function, bone strength, and overall well-being.
+        
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+  
+
+
+  <div id="Zincovit_C" class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Zincovit - C</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="Zincovit_C.jpeg" alt="Zincovit - C">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 201.41</span>
+        <span class="quantity">30 tablets</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Vitamin C and Zinc supplement to strengthen immunity and fight infections.Boost your immunity with Zincovit-C, a powerful blend of Zinc, Vitamin C, and Propolis. 
+        These tasty chewable tablets support the body’s natural defenses, reduce fatigue, and promote overall wellness. 
+        100% vegetarian and convenient for daily use, Zincovit-C helps you stay strong and healthy every day.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+
+   <div id="GlucoRedi" class="container">
+    <header>
+      <a href="search.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">GlucoRedi</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="GlucoRedi.jpeg" alt="GlucoRedi">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 223.47</span>
+        <span class="quantity">30 tablets</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Dietary supplement formulated to support blood sugar management and overall endocrine health. 
+        Made with natural, doctor-formulated ingredients, it helps maintain normal blood sugar levels, enhances insulin production, suppresses sugar cravings, and reduces sugar absorption in the intestines. 100% vegan and safe for daily use, GlucoRedi promotes better diabetic control and long-term wellness.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+     <div id="AlbueshKapsul" class="container">
+    <header>
+      <a href="search.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Albuesh Kapsul</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="Albueshkapsul.jpeg" alt="Albuesh Kapsul">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 295.36</span>
+        <span class="quantity">60 capsules</span>
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        natural supplement made from snakehead fish extract, rich in albumin and essential nutrients. It is specially formulated to help support wound healing, strengthen the immune system, and promote overall health. 
+        Each bottle contains 60 capsules, making it convenient for daily use to aid recovery and boost vitality.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+  <div id="BloodPressureMonitor" class="container">
+    <header>
+      <a href="search.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Blood Pressure Monitor</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="BloodPressureMonitor.jpeg" alt="Blood Pressure Monitor">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 780.00</span>  
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Measure the force of blood against the walls of your arteries as your heart pumps. 
+        It helps track systolic and diastolic pressure, which are essential indicators of heart health.
+        Designed for easy and accurate readings at home, this device offers a user-friendly interface and reliable measurements to help manage hypertension and cardiovascular health.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;<span style="color: #ccc;">&#9733;</span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+
+
+
+  <div id="Thermometer" class="container">
+    <header>
+      <a href="search.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <h1 class="product-title">Thermometer</h1>
+    <div class="product-image-section">
+      <div class="product-image-container">
+        <img src="Thermometer.jpeg" alt="Thermometer">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price-section">
+        <span class="price">₹ 900.00</span>  
+      </div>
+      <h2 class="section-header">Product Details</h2>
+      <p class="product-description">
+        Quick, safe, and hygienic — this Infrared Forehead Thermometer offers non-contact temperature measurement, making it ideal for families, clinics, schools, and workplaces. ]
+        Designed for ease of use, it delivers fast and accurate readings in just one second.
+      </p>
+      <div class="rating-section">
+        <h2 class="section-header">Rating</h2>
+        <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733<span style="color: #ccc;"></span></div>
+      </div>
+    </div>
+    <a href="cart.html" class="add-to-cart-btn">Add To Cart</a>
+  </div>
+  <!-- Show selected product -->
+  <script>
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const product = document.getElementById(hash);
+      if (product) product.classList.add("active");
+    } else {
+      document.querySelector(".container").classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

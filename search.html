@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      color: #1260ae;
+    }
+    .container {
+      max-width: 450px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    .back-arrow {
+      font-size: 24px;
+      color: #1260ae;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    .search-bar {
+      position: relative;
+      flex-grow: 1;
+    }
+    .search-bar input {
+      width: 80%;
+      padding: 10px 15px 10px 40px;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      font-size: 16px;
+      background-color: #f7f7f7;
+      outline: none;
+    }
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #1260ae;
+    }
+    .categories {
+      padding: 0 20px;
+    }
+    .categories ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .categories li {
+      margin: 15px 0;
+    }
+    .categories a {
+      display: flex;
+      align-items: center;
+      color: #1260ae;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .categories .icon {
+      font-size: 18px;
+      margin-right: 15px;
+      color: #1260ae;
+    }
+    .categories .view-all {
+      display: block;
+      text-align: center;
+      color: #1260ae;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    main {
+      padding: 20px;
+    }
+    .product-section {
+      margin-bottom: 30px;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .section-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .view-all-link {
+      color: #1260ae;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .product-grid {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .product-grid::-webkit-scrollbar {
+      display: none;
+    }
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #1260ae;
+      border-radius: 8px;
+      padding: 15px;
+      flex: 0 0 160px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .product-image-container {
+      width: 100%;
+      height: 100px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .product-card h3 {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 0 5px;
+      color: #1260ae;
+    }
+    .product-card .price {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1260ae;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="home.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for">
+        <span class="search-icon">🔍</span>
+      </div>
+    </header>
+
+    <nav class="categories">
+      <ul>
+        <li><a href="#"><span class="icon">🔍</span> Personal Care</a></li>
+        <li><a href="#"><span class="icon">🔍</span> Diabetic Care</a></li>
+        <li><a href="#"><span class="icon">🔍</span> Daily Use</a></li>
+        <li><a href="#"><span class="icon">🔍</span> Health Conditions</a></li>
+        <li><a href="#"><span class="icon">🔍</span> Healthcare Devices</a></li>
+      </ul>
+      <a href="#" class="view-all">View all &#8595;</a>
+    </nav>
+
+    <main>
+      <section class="product-section">
+        <div class="section-header">
+          <h2>Diabetic Care</h2>
+          <a href="#" class="view-all-link">View all &#8594;</a>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product.html#GlucoRedi"><img src="assets/GlucoRedi.jpeg" alt="GlucoRedi"></a>
+            </div>
+            <h3>GlucoRedi</h3>
+            <p class="price">₹ 223.47</p>
+          </div>
+
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product.html#AlbueshKapsul"><img src="assets/Albueshkapsul.jpeg" alt="Albuesh Kapsul"></a>
+            </div>
+            <h3>Albuesh Kapsul</h3>
+            <p class="price">₹ 295.36</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="section-header">
+          <h2>Healthcare Devices</h2>
+          <a href="#" class="view-all-link">View all &#8594;</a>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product.html#BloodPressureMonitor"><img src="assets/BloodPressureMonitor.jpeg" alt="Blood Pressure Monitor"></a>
+            </div>
+            <h3>Blood Pressure Monitor</h3>
+            <p class="price">₹ 780.00</p>
+          </div>
+
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product.html#Thermometer"><img src="assets/Thermometer.jpeg" alt="Thermometer"></a>
+            </div>
+            <h3>Thermometer</h3>
+            <p class="price">₹ 900.00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+

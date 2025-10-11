@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareMate - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #1260ae;
+    }
+    .container {
+      max-width: 420px;
+      margin: auto;
+      background: #fff;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1260ae, #82d4f9);
+      padding: 20px;
+      color: white;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: relative;
+    }
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu-icon {
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .logo {
+      width: 35px;
+      height: auto;
+      margin-left: -230px;
+    }
+    .nav-icons i {
+      font-size: 18px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .location-info {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .search-bar {
+      margin-top: 15px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar i {
+      margin-right: 8px;
+      color: #1260ae;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: 14px;
+    }
+    /* Promo banners */
+    .promo-banners {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 15px;
+    }
+    .banner-card {
+      border-radius: 15px;
+      padding: 15px;
+      color: #1260ae;
+      height: 120px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .discount-banner { background: #64a8ed; }
+    .substitute-banner { background: #64a8ed; }
+    .banner-card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .banner-card p {
+      margin: 5px 0 10px;
+      font-size: 14px;
+    }
+    .order-btn {
+      background: white;
+      color: #1260ae;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      position: absolute;
+      bottom: 10px;
+    }
+    /* Section headers */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .section-header h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1260ae;
+    }
+    .section-header p {
+      margin: 0;
+      font-size: 12px;
+      color: #1260ae;
+    }
+    .view-all {
+      font-size: 14px;
+      color: #1260ae;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .view-all i {
+      margin-left: 5px;
+    }
+    /* Product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      border-color: #1260ae;
+      padding: 0 15px 20px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      border-color: #1260ae;
+      box-shadow: 0 2px 6px 1260ae(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product-card:hover { transform: scale(1.03); }
+    .product-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .details {
+      padding: 8px;
+    }
+    .details h4 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1260ae;
+    }
+    .price {
+      margin: 5px 0;
+      font-weight: bold;
+      font-size: 13px;
+      color: #1260ae;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <nav class="top-nav">
+        <a href="menu.html"><i class="fas fa-bars menu-icon"></i></a>
+        <img src="logo.png" alt="CareMate Logo" class="logo">
+        <div class="nav-icons">
+          <i class="far fa-bell"></i>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+      <div class="location-info">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Your Current Location</span>
+      </div>
+     <div class="search-bar">
+  <form action="search.html" method="GET" style="display:flex; align-items:center; width:100%;">
+    <i class="fas fa-search"></i>
+    <input type="text" name="q" placeholder="Search">
+  </form>
+</div>
+    </header>
+
+    <main class="main-content">
+      <!-- Promo banners -->
+      <section class="promo-banners">
+        <div class="banner-card discount-banner">
+          <div class="content">
+            <h3>30% Discount</h3>
+            <p>On Medicines</p>
+            <a href="#" class="order-btn">Order Now</a>
+          </div>
+        </div>
+        <div class="banner-card substitute-banner">
+          <div class="content">
+            <h3>Up to 20% off</h3>
+            <p>Look For<br>Substitute</p>
+            <a href="#" class="order-btn">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular items -->
+      <section class="popular-items">
+        <div class="section-header">
+          <div>
+            <h2>Popular Items</h2>
+            <p>Items bought in your city</p>
+          </div>
+          <a href="#" class="view-all">
+            View all <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="product.html#Biofer_F"><img src="Biofer_F.jpeg" alt="Biofer-F"></a>
+            <div class="details">
+              <h4>Biofer-F</h4>
+              <p class="price">Rs. 50.13</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html#AbuminExtraTapuco"><img src="AbuminExtraTapuco.jpeg" alt="Abumin Extra Tapuco"></a>
+            <div class="details">
+              <h4>Abumin Extra Tapuco</h4>
+              <p class="price">Rs. 102.50</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vitamins and Supplements -->
+      <section class="vitamins-supplements">
+        <div class="section-header">
+          <div>
+            <h2>Vitamins and Supplements</h2>
+          </div>
+          <a href="#" class="view-all">
+            View all <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="product.html#VitaFolMultivitamins"><img src="VitaFolMultivitamins.jpeg" alt="VitaFol Multivitamins"></a>
+            <div class="details">
+              <h4>VitaFol Multivitamins</h4>
+              <p class="price">Rs. 150.76</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="product.html#Zincovit_C"><img src="Zincovit_C.jpeg" alt="Zincovit - C"></a>
+            <div class="details">
+              <h4>Zincovit - C</h4>
+              <p class="price">Rs. 201.41</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
